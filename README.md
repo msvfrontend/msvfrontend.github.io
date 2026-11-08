@@ -2,7 +2,7 @@
 
 Матеріали до уроків каналу «Frontend practice» на YouTube.
 
-▶ Канал: [[Frontend practice](https://www.youtube.com/channel/UCJfcibCIEgvwrTgRxTNCcpw)]
+▶ Канал: [Frontend practice](https://www.youtube.com/channel/UCJfcibCIEgvwrTgRxTNCcpw)]
 
 ## Уроки
 
