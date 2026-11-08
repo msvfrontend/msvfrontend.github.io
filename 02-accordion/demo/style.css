@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #18202f;
+    line-height: 1.6;
+}
+
+
+.page {
+  width: 400px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accordion-item {
+    overflow: hidden;
+    border: 1px solid #e1e5ec;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(20, 30, 50, 0.04);
+}
+
+
+.accordion-item summary, .checkbox-accordion label, .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 22px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.icon {
+    font-size: 24px;
+    transition: transform 0.25s ease;
+}
+
+.accordion-content {
+    padding: 0 22px 20px;
+    color: #667085;
+}
+
+
+/* =========================================================
+   VARIANT 1
+   DETAILS / SUMMARY
+========================================================= */
+
+.accordion-item summary {
+    list-style: none;
+}
+
+
+.accordion-item summary::-webkit-details-marker {
+    display: none;
+}
+
+
+.accordion-item[open] summary .icon {
+    transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   VARIANT 2
+   CHECKBOX
+========================================================= */
+
+.checkbox-accordion input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.checkbox-accordion .accordion-content {
+    display: none;
+}
+
+.checkbox-accordion input:checked ~ .accordion-content {
+    display: block;
+}
+
+.checkbox-accordion input:checked + label .icon {
+    transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   VARIANT 3
+   JAVASCRIPT (Simplified)
+========================================================= */
+
+.js-accordion .accordion-content {
+    display: none;
+}
+
+.js-accordion .accordion-item.active .accordion-content {
+    display: block;
+}
+
+.js-accordion .accordion-item.active .icon {
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+

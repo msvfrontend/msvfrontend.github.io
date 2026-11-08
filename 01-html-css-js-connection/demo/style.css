@@ -1,0 +1,86 @@
+body {
+	margin: 0;
+	padding: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f1f5f9;
+	color: #1e293b;
+}
+
+.header {
+	max-width: 900px;
+	margin: 0 auto 40px;
+	text-align: center;
+}
+
+.header h1 {
+	margin-bottom: 10px;
+}
+
+.cards {
+	display: flex;
+	max-width: 900px;
+	margin: 0 auto;
+	gap: 20px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	flex: 1;
+	padding: 30px;
+	background-color: #fff;
+	border: 2px solid #e2e8f0;
+	border-radius: 12px;
+	text-align: center;
+	transition: 0.3s;
+}
+
+.card h2 {
+	margin-top: 0;
+}
+.card p {
+	margin-bottom: auto;
+	padding-bottom: 10px;
+}
+
+.card-button {
+	padding: 10px 10px;
+	border: none;
+	border-radius: 6px;
+	background-color: #2563eb;
+	color: #fff;
+	cursor: pointer;
+	margin-top: auto;
+}
+
+.card-button:hover {
+	background-color: #0b1d4e;
+}
+
+.footer {
+	max-width: 900px;
+	margin: 40px auto 0;
+	text-align: center;
+	color: #64748b;
+}
+
+.badge {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 5px 10px;
+	border-radius: 20px;
+	background-color: #22c55e;
+	font-size: 12px;
+}
+
+.card.completed {
+	border-color: #22c55e;
+	background-color: #f0fdf4;
+}
+
+.card.completed .badge {
+	display: block;
+}
