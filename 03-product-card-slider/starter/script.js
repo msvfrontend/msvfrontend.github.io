@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	const card = document.querySelector('.product-card');
 
 	const images = [
-		'./img/10245824_1.webp',
-		'./img/10245824_2.webp',
-		'./img/10245824_3.webp'
+		'/img/10245824_1.webp',
+		'/img/10245824_2.webp',
+		'/img/10245824_3.webp'
 	];
 
 	const imgElement = card.querySelector('.main-image');
